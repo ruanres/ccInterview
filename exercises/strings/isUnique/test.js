@@ -2,17 +2,17 @@ const isUnique = require('./isUnique');
 
 const table = [
   ['abcd', true],
-  ['banana', false],
+  ['bnanab', false],
   ['x', true],
-  ['', true],
-  ['axa', false],
+  ['xa', true],
+  ['xax', true],
 ];
 
 describe.each(table)(
   'isUnique(%s)',
   (a, expected) => {
     test(`returns ${expected}`, () => {
-      expect(isUnique(a)).toEqual(expected);
+      expect(isUnique(a)).toBe(expected);
     });
   }
 );
