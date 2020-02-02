@@ -1,4 +1,4 @@
-const isUnique = require('./isUnique');
+const isUnique = require('./');
 
 const table = [
   ['abcd', true],
